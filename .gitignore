@@ -1,0 +1,62 @@
+# ===== Secrets =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.dvc/config.local
+
+# ===== IDE =====
+.idea/
+*.iml
+.vscode/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Python (ml, ml-service) =====
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# ===== Java / Spring (api) =====
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.log
+HELP.md
+
+# ===== MLOps: never in Git (DVC / MLflow) =====
+mlruns/
+mlartifacts/
+.dvc/cache/
+/data/
+/ml/data/
+/ml-service/data/
+*.pkl
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.bin
+reports/drift/*.html
+
+# ===== Docker =====
+docker-compose.override.yml
+
+/docs
+
+
